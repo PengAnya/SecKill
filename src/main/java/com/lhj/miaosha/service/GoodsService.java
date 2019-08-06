@@ -31,13 +31,6 @@ public class GoodsService {
     public boolean reduceStock(GoodsVo goods) {
         MiaoshaGoods g = new MiaoshaGoods();
         g.setGoodsId(goods.getId());
-        return goodsDao.reduceStock(g) == 1 ? true : false;
-
+        return goodsDao.reduceStock(g) > 0 ;
     }
-//    public void reduceStock(GoodsVo goods) {
-//        MiaoshaGoods g = new MiaoshaGoods();
-//        g.setGoodsId(goods.getId());
-//        goodsDao.reduceStock(g);
-//        System.out.println("减库存");
-//    }
 }

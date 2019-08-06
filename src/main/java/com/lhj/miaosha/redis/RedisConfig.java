@@ -13,11 +13,11 @@ import org.springframework.stereotype.Component;
 public class RedisConfig {
     private String host;
     private int port;
-    private int timeout;//秒
+    private int timeout;
     private String password;
     private int poolMaxTotal;
     private int poolMaxIdle;
-    private int poolMaxWait;//秒
+    private int poolMaxWait;
 
     public String getHost() {
         return host;

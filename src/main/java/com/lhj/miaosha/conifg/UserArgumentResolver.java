@@ -1,6 +1,7 @@
 package com.lhj.miaosha.conifg;
 
 import com.alibaba.druid.util.StringUtils;
+import com.lhj.miaosha.access.UserContext;
 import com.lhj.miaosha.domain.MiaoshaUser;
 import com.lhj.miaosha.service.MiaoshaUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,30 +48,31 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver {
      */
     @Override
     public Object resolveArgument(MethodParameter methodParameter, ModelAndViewContainer modelAndViewContainer, NativeWebRequest nativeWebRequest, WebDataBinderFactory webDataBinderFactory) throws Exception {
-        HttpServletRequest request = nativeWebRequest.getNativeRequest(HttpServletRequest.class);
-        HttpServletResponse response = nativeWebRequest.getNativeResponse(HttpServletResponse.class);
+//        HttpServletRequest request = nativeWebRequest.getNativeRequest(HttpServletRequest.class);
+//        HttpServletResponse response = nativeWebRequest.getNativeResponse(HttpServletResponse.class);
 
-        String paramToken = request.getParameter(MiaoshaUserService.COOKIE_NAME_TOKEN);
-        String cookieToken = getCookieValue(request, MiaoshaUserService.COOKIE_NAME_TOKEN);
-        if (StringUtils.isEmpty(cookieToken) && StringUtils.isEmpty(paramToken)) {
-            return null;
-        }
-        String token = StringUtils.isEmpty(paramToken) ? cookieToken : paramToken;
-        return userService.getByToken(response, token);
+//        String paramToken = request.getParameter(MiaoshaUserService.COOKIE_NAME_TOKEN);
+//        String cookieToken = getCookieValue(request, MiaoshaUserService.COOKIE_NAME_TOKEN);
+//        if (StringUtils.isEmpty(cookieToken) && StringUtils.isEmpty(paramToken)) {
+//            return null;
+//        }
+//        String token = StringUtils.isEmpty(paramToken) ? cookieToken : paramToken;
+//        return userService.getByToken(response, token);
+        return UserContext.gerUser();
     }
 
     //遍历所有cookie，找到需要的那个cookie
-    private String getCookieValue(HttpServletRequest request, String cookiName) {
-        Cookie[] cookies = request.getCookies();
-        if (cookies == null || cookies.length <= 0) {
-            return null;
-        }
-        for (Cookie cookie : cookies) {
-            if (cookie.getName().equals(cookiName)) {
-                return cookie.getValue();
-            }
-        }
-        return null;
-    }
+//    private String getCookieValue(HttpServletRequest request, String cookiName) {
+//        Cookie[] cookies = request.getCookies();
+//        if (cookies == null || cookies.length <= 0) {
+//            return null;
+//        }
+//        for (Cookie cookie : cookies) {
+//            if (cookie.getName().equals(cookiName)) {
+//                return cookie.getValue();
+//            }
+//        }
+//        return null;
+//    }
 }
 

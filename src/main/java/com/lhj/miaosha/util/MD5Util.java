@@ -8,14 +8,12 @@ import org.apache.commons.codec.digest.DigestUtils;
  * @description：${description}
  */
 public class MD5Util {
-
     private static final String salt = "1a2b3c4d";
-
     public static String md5(String src){
         return DigestUtils.md5Hex(src);
     }
-
     /**
+     * 固定salt
      * 第一次MD5加密，用于网络传输
      * @param inputPass
      * @return
@@ -27,6 +25,7 @@ public class MD5Util {
     }
 
     /**
+     * 随机salt
      * 第二次MD5加密，用于存储到数据库
      * @param formPass
      * @param salt

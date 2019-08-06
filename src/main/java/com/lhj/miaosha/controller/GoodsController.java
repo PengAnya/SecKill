@@ -83,7 +83,6 @@ public class GoodsController {
         //根据id查询商品详情
         GoodsVo goods = goodsService.getGoodsVoByGoodsId(goodsId);
         model.addAttribute("goods", goods);
-
         long startTime = goods.getStartDate().getTime();
         long endTime = goods.getEndDate().getTime();
         long now = System.currentTimeMillis();
@@ -106,7 +105,6 @@ public class GoodsController {
         vo.setUser(user);
         vo.setRemainSeconds(remainSeconds);
         vo.setMiaoshaStatus(miaoshaStatus);
-
         return Result.success(vo);
     }
 

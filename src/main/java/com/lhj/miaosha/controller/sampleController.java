@@ -1,6 +1,8 @@
 package com.lhj.miaosha.controller;
 
 import com.lhj.miaosha.domain.User;
+import com.lhj.miaosha.rabbitmq.MQReceiver;
+import com.lhj.miaosha.rabbitmq.MQSender;
 import com.lhj.miaosha.redis.RedisService;
 import com.lhj.miaosha.redis.UserKey;
 import com.lhj.miaosha.result.CodeMsg;
@@ -24,6 +26,41 @@ public class sampleController {
     UserService userService;
     @Autowired
     RedisService redisService;
+
+//    @Autowired
+//    MQSender sender;
+//
+//    @RequestMapping("/mq/headers")
+//    @ResponseBody
+//    public Result<String> headers() {
+//        sender.sendHeaders("hello,lianghj");
+//        return Result.success("hello,lianghj");
+//        // return new Result(0, "success", "hello,imooc");
+//    }
+//
+//    @RequestMapping("/mq/fanout")
+//    @ResponseBody
+//    public Result<String> fanout() {
+//        sender.sendFanout("hello,lianghj");
+//        return Result.success("hello,lianghj");
+//        // return new Result(0, "success", "hello,imooc");
+//    }
+//
+//    @RequestMapping("/mq/topic")
+//    @ResponseBody
+//    public Result<String> mq() {
+//        sender.sendTopic("hello,lianghj");
+//        return Result.success("hello,lianghj");
+//        // return new Result(0, "success", "hello,imooc");
+//    }
+//
+//    @RequestMapping("/mq")
+//    @ResponseBody
+//    public Result<String> topic () {
+//        sender.send("hello,lianghj");
+//        return Result.success("hello,lianghj");
+//        // return new Result(0, "success", "hello,imooc");
+//    }
 
     @RequestMapping("/thymeleaf")
     public String thymeleaf(Model model){
