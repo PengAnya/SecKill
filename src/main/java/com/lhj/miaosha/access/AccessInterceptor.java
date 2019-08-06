@@ -52,7 +52,7 @@ public class AccessInterceptor  extends HandlerInterceptorAdapter{
                 }
                 key += "_" + user.getId();
             }else {
-                //do nothing
+                //do nothing 如果不需要登录则不需要做任何处理
             }
             AccessKey ak = AccessKey.withExpire(seconds);
             Integer count = redisService.get(ak, key, Integer.class);
