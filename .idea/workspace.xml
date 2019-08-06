@@ -1,149 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb9ddc20-648a-479a-a10c-fba452545391" name="Default" comment="完成了基本的项目搭建：&#10;1.集成了mybatis，druid，redis，thymeleaf&#10;2. 明文密码两次MD5处理&#10;3.JSR303参数校验+全局异常处理器&#10;4.分布式Session&#10;5.自定义参数解析器&#10;6.to_list实现页面缓存，goods_detail和order_detail实现前后端分离页面静态化">
-      <change afterPath="$PROJECT_DIR$/.idea/sql/MysqlDB.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/access/AccessInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/access/AccessLimit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/access/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/rabbitmq/MQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/rabbitmq/MQReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/rabbitmq/MQSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/rabbitmq/MiaoshaMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/redis/AccessKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/redis/MiaoshaKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/MainApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/access/AccessInterceptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/access/AccessLimit.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/access/UserContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/conifg/UserArgumentResolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/conifg/WebConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/controller/GoodsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/controller/MiaoshaController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/controller/OrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/controller/sampleController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/dao/GoodsDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/dao/MiaoShaUserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/dao/OrderDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/domain/Goods.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/domain/MiaoshaGoods.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/domain/MiaoshaOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/domain/MiaoshaUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/domain/OrderInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/domain/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/exception/GlobalException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/rabbitmq/MQConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/rabbitmq/MQReceiver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/rabbitmq/MQSender.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/rabbitmq/MiaoshaMessage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/redis/AccessKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/redis/BasePrefix.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/redis/GoodsKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/redis/KeyPrefix.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/redis/MiaoshaKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/redis/MiaoshaUserKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/redis/OrderKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/redis/RedisConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/redis/RedisPoolFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/redis/RedisService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/redis/UserKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/result/CodeMsg.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/result/Result.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/service/GoodsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/service/MiaoshaService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/service/MiaoshaUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/service/OrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/util/DBUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/util/MD5Util.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/util/UUIDUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/util/UserUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/util/ValidatorUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/validator/IsMobile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/validator/IsMobileValidator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/vo/GoodsDetailVo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/vo/GoodsVo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/vo/LoginVo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lhj/miaosha/vo/OrderDetailVo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/goods_detail.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/bg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/iphone8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/iphonex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/meta10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/mi6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/stress-test/goodsList_test_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/stress-test/goodsList_test_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/stress-test/goodslist_test_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/stress-test/optimised_goodslist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/stress-test/optimised_userinfo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/stress-test/redist_test_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/stress-test/userinfo_test_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/stress-test/userinfo_test_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/stress-test/userinfo_test_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/stress-test/userinfo_test_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/jquery-validation/additional-methods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/jquery-validation/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/jquery-validation/localization/messages_zh.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/md5.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/layer/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/layer/mobile/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/layer/mobile/need/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/layer/skin/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/layer/skin/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/layer/skin/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/layer/skin/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/layer/skin/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/layer/skin/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/order_detail.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/goods_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/goods_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/miaosha_fail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/order_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/conifg/UserArgumentResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/conifg/UserArgumentResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/conifg/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/conifg/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/controller/MiaoshaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/controller/MiaoshaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/controller/sampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/controller/sampleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/redis/GoodsKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/redis/GoodsKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/redis/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/redis/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/redis/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/result/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/result/CodeMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/service/MiaoshaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/service/MiaoshaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/service/MiaoshaUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/service/MiaoshaUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/util/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/util/MD5Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/validator/IsMobileValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lhj/miaosha/validator/IsMobileValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/goods_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/goods_detail.htm" afterDir="false" />
+    <list default="true" id="cb9ddc20-648a-479a-a10c-fba452545391" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -159,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="53" column="51" lean-forward="true" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -168,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lhj/miaosha/controller/MiaoshaController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="129">
-              <caret line="145" column="78" lean-forward="true" selection-start-line="145" selection-start-column="78" selection-end-line="145" selection-end-column="78" />
+              <caret line="145" column="78" selection-start-line="145" selection-start-column="78" selection-end-line="145" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -185,11 +44,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MQReceiver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MQReceiver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lhj/miaosha/rabbitmq/MQReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+            <state relative-caret-position="-1218">
+              <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MysqlDB.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/sql/MysqlDB.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -245,6 +116,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="lianghj1 &lt;2082279647@qq.com&gt;" />
         <option value="lianghongjia" />
       </list>
     </option>
@@ -356,6 +228,17 @@
             <path>
               <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
               <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
@@ -582,7 +465,7 @@
       <updated>1564297733558</updated>
       <workItem from="1564297737097" duration="21656000" />
       <workItem from="1564362763407" duration="138056000" />
-      <workItem from="1565053859904" duration="5599000" />
+      <workItem from="1565053859904" duration="6703000" />
     </task>
     <task id="LOCAL-00001" summary="完成了基本的项目搭建：&#10;1.集成了mybatis，druid，redis，thymeleaf&#10;2. 明文密码两次MD5处理&#10;3.JSR303参数校验+全局异常处理器&#10;4.分布式Session&#10;5.自定义参数解析器&#10;6.to_list实现页面缓存，goods_detail和order_detail实现前后端分离页面静态化">
       <created>1564471158511</created>
@@ -605,11 +488,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564473227429</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="导入创建表的sql">
+      <created>1565070207928</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565070207928</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165311000" />
+    <option name="totallyTimeSpent" value="166415000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -622,10 +512,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067025" side_tool="true" weight="0.012838801" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.2419571" side_tool="true" visible="true" weight="0.5620542" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -640,11 +529,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32952926" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32952926" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.7580429" visible="true" weight="0.5620542" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.14693296" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.5406562" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20241287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20241287" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Learn" order="2" />
@@ -728,7 +617,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成了基本的项目搭建：&#10;1.集成了mybatis，druid，redis，thymeleaf&#10;2. 明文密码两次MD5处理&#10;3.JSR303参数校验+全局异常处理器&#10;4.分布式Session&#10;5.自定义参数解析器&#10;6.to_list实现页面缓存，goods_detail和order_detail实现前后端分离页面静态化" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了基本的项目搭建：&#10;1.集成了mybatis，druid，redis，thymeleaf&#10;2. 明文密码两次MD5处理&#10;3.JSR303参数校验+全局异常处理器&#10;4.分布式Session&#10;5.自定义参数解析器&#10;6.to_list实现页面缓存，goods_detail和order_detail实现前后端分离页面静态化" />
+    <MESSAGE value="导入创建表的sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="导入创建表的sql" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -928,6 +818,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="16" selection-start-line="16" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,18 +936,13 @@
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/sql/MysqlDB.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_detail.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="53" column="51" lean-forward="true" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1068,7 +956,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lhj/miaosha/controller/MiaoshaController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
-          <caret line="145" column="78" lean-forward="true" selection-start-line="145" selection-start-column="78" selection-end-line="145" selection-end-column="78" />
+          <caret line="145" column="78" selection-start-line="145" selection-start-column="78" selection-end-line="145" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -1084,8 +972,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lhj/miaosha/rabbitmq/MQReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        <state relative-caret-position="-1218">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/sql/MysqlDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
         </state>
       </provider>
     </entry>
