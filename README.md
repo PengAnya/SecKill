@@ -79,3 +79,14 @@
 	- **分散用户的请求：** 高并发下场景，在刚刚开始秒杀的那一瞬间，迎来的并发量是最大的，减少同一时间点的并发量，将并发量分流也是一种减少数据库以及系统压力的措施（使得1s中来10万次请求过渡为10s中来10万次请求）
 ##### 6.11 接口限流防刷
 - **限制同一用户一定时间内（如1 min）只能访问固定次数，可以使用拦截器减少对业务的侵入，在服务端对系统做一层保护**
+## 7.具体技术实现细节
+1. [明文密码两次MD5处理](https://blog.csdn.net/qq_40776491/article/details/98312614)
+2. [Redis通用缓存Key封装](https://blog.csdn.net/qq_40776491/article/details/98339039)
+3. [JSR303 参数校验 + 全局异常处理](https://blog.csdn.net/qq_40776491/article/details/98390551)
+4. [自定义参数解析器](https://blog.csdn.net/qq_40776491/article/details/98446983)
+5. [页面优化技术（页面缓存 + 对象缓存）](https://blog.csdn.net/qq_40776491/article/details/98469684)
+6. [页面优化技术（页面静态化 ，前后端分离）](https://blog.csdn.net/qq_40776491/article/details/98470586)
+7. [使用RabbitMQ实现高并发接口优化](https://blog.csdn.net/qq_40776491/article/details/98473554)
+8. [秒杀地址隐藏](https://blog.csdn.net/qq_40776491/article/details/98476347)
+9. [数学公式验证码](https://blog.csdn.net/qq_40776491/article/details/98481193)
+10. [接口限流防刷](https://blog.csdn.net/qq_40776491/article/details/98506663) 
