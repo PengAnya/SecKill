@@ -33,7 +33,7 @@
 - 对错误的代码做了一个CodeMsg的封装
 - 访问缓存做了一个key的封装
 
-## 6 主要知识点
+## 6 实现技术点
 ##### 6.1 两次md5密码校验
 - 用户端：inputPassToFormPass = MD5（明文+固定salt）
 - 服务端：formPassToDBPass = MD5(inputPassToFormPass+ 随机salt）
