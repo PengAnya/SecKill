@@ -92,4 +92,15 @@
 9. [数学公式验证码](https://blog.csdn.net/qq_40776491/article/details/98481193)
 10. [接口限流防刷](https://blog.csdn.net/qq_40776491/article/details/98506663) 
 
-## 8. [个人博客](https://blog.csdn.net/qq_40776491)
+## 8.优化前后压测对比
+### 8.1 商品列表页 页面缓存优化前后压测对比
+- 页面缓存优化前 1000 * 10 QPS：222
+![页面缓存优化前](https://img-blog.csdnimg.cn/2019080717013142.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzc2NDkx,size_16,color_FFFFFF,t_70)
+- 页面缓存优化后 1000 * 10 QPS：353
+![页面缓存优化后](https://img-blog.csdnimg.cn/20190807170001398.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzc2NDkx,size_16,color_FFFFFF,t_70)
+### 8.2 秒杀接口优化前后压测对比
+- 优化前 1000 * 10 QPS：231
+![优化前](https://img-blog.csdnimg.cn/20190807170419697.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzc2NDkx,size_16,color_FFFFFF,t_70)
+- 优化后 1000 * 10 QPS：1034
+![优化后](https://img-blog.csdnimg.cn/20190807170511328.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzc2NDkx,size_16,color_FFFFFF,t_70)
+## 9. [更多技术细节，请查看个人博客](https://blog.csdn.net/qq_40776491)
